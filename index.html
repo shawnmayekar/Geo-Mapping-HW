@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Data Visualization</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./static/css/style.css"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+
+</head>
+<body>
+<div>    
+  <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+  <div class="container">
+  <a class="navbar-brand" href="index.html"><span><font color="Red">#REDforED</font></span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="menu">
+    <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="dropdown">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Visualizations
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="salary.html">Salary Visualization</a>
+                <a class="dropdown-item" href="TestScores.html">Test Scores Visualization</a>
+                <a class="dropdown-item" href="map.html">Map Visualization</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+
+    </ul>
+  </div>
+</div>        
+</nav>
+<div class="container" style="margin-top:80px">
+  <div class="row">
+    <div class="col-md-9">
+            <img src="img/teacher4.jpg" id="image" width="800" height="400">
+            <script>
+             var imageSources = ["img/teacher4.jpg", "img/teacher5.jpg", "img/red.jpg","img/teacher6.jpg", "img/red2.jpg", "img/teacher7.jpg","img/teacher8.jpg","img/teacher9.jpg","img/teacher3.jpg"];
+             var index = 0;
+             setInterval(function() {
+              if (index === imageSources.length) {
+              index=0;}
+              document.getElementById("image").src = imageSources[index];
+              index++;
+              }, 3000);
+            </script>
+    </div>
+    <div class="col-md-3">
+      <h1 class="caption center-block text-center"><font color="rgb(3, 39, 66)">Description</font></h1>
+      <p class="py-5 text-center"><font color="rgb(3, 39, 66)">This Description about our project , results , overview, ...................................</font></p>
+
+    </div>
+  </div>  
+</div>
+<div class="container" style="margin-top:40px">
+  <div class="row">
+    <div class="col-sm-12">
+     <h4><font color="rgb(3, 39, 66)">Project Description1</font></h4></div>
+    <div class="col-sm-12">
+     <h5><font color="rgb(3, 39, 66)">Our Topic</font></h5></div>
+    <div class="col-md-9">
+      <p  style="text-align:justify"><font color="rgb(3, 39, 66)">
+        In 2018-2019 almost half a million teachers (and educational staff) have protested or participated in strikes across the United States. 
+        Many of these protests/strikes were related to the #RedforEd movement. The demands varied by state but highlighted teacher’s dissatisfaction with compensation, funding, working conditions and much more.
+        This project analyzes U.S. education data to understand the underlying conditions that have led to statewide protests/strikes in 7 states: Arizona, Colorado, Kentucky, North Carolina, Oklahoma, South Carolina, Virginia, and West Virginia.</font></p></div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+<div class="container" style="margin-top:40px">
+  <div class="row">
+      <div class="col-sm-12">
+    <h5><font color="rgb(3, 39, 66)">Teacher Protests 2018-2019 by State</font></h5></div>
+    <div class="col-md-9">
+    <p style="text-align:justify"><font color="rgb(3, 39, 66)"><span style="color:#16A121"><strong>Green</strong></span>: Arizona, California, Colorado, North Carolina, Oklahoma, South Carolina, Virginia and West Virginia.
+                                     The state government took action due to the protests.</font></p>
+    <p style="text-align:justify"><font color="rgb(3, 39, 66)"><span style="color:#C6101B"><strong>Red</strong></span>: Georgia and Kentucky.The state government took no action due to the protests.</font></p></div>
+    <div class="col-md-3"></div>
+
+    <img src="img/map.jpg" width="800" height="400">
+</div>
+<div class="container" style="margin-top:40px">
+  <div class="row">
+    <div class="col-md-4">
+        <a href="salary.html"><img src="img/salary.jpg" width="300" height="180"></a>
+  </div>
+  <div class="col-md-4">
+      <a href="map.html"><img src="img/fundingmap.jpg"width="300" height="180"></a>
+  </div>
+  <div class="col-md-4">
+            <a href="TestScores.html"><img src="img/score.jpg"width="300" height="180"></a>
+  </div>
+</div>
+<div class="container" style="margin-top:40px">
+  <footer>
+    <p style="font-family: Georgia">Created by : Ellen, Harper, Hunter, Ruba, Shawn, Stephanie.</p>
+  </footer>
+</div>
+
+<script type="text/javascript" src="static/js/config.js"></script>
+
+<script type="text/javascript" src="static/js/statesData.js"></script>
+    <!-- JS -->
+<script type="text/javascript" src="static/js/app1.js"></script>
+
+</body>
+</html>
